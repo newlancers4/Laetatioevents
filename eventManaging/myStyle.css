@@ -54,7 +54,7 @@ body {
 .header {
     padding: 30px;
     text-align: center;
-    background: white;
+    background-image: radial-gradient(rgb(255, 255, 255), rgba(250, 184, 236, 0.397), rgba(255, 60, 151, 0.322));
 }
 
 .header h1 {
@@ -68,7 +68,7 @@ body {
 
 .topnav {
     overflow: hidden;
-    background-color: rgb(255, 60, 151);
+    background-color: rgb(255, 92, 168);
     color: white;
 }
 
@@ -105,7 +105,8 @@ body {
 }
 
 .card {
-    background-color: white;
+    /* background-color: white; */
+    background-image: radial-gradient(rgb(255, 255, 255), rgba(250, 184, 236, 0.397), rgba(255, 60, 151, 0.322));
     padding: 20px;
     margin-top: 20px;
     text-align: center;
@@ -255,13 +256,15 @@ body {
 }
 
 #surp-promo>div {
+    min-width: 49%;
     margin-top: 20px;
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-image: radial-gradient(rgb(255, 255, 255), rgba(250, 184, 236, 0.397), rgba(255, 60, 151, 0.322));
 }
 
 #indoor {
