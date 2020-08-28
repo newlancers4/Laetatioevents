@@ -1,6 +1,22 @@
 window.onload = timeout;
 const body = document.getElementById("body")
 function timeout() {
+    var addr=window.location.href
+    var splash = document.getElementById("splash-container");
+    var body = document.getElementById("body")
+    if(addr.includes("?splash"))
+       {           
+        splash.remove()
+        body.style.animation="none"
+        body.style.padding=10+"px"
+        body.style.margin=8+"px"
+        body.style.overflow="visible"
+        body.style.background="f1f1f1"
+        
+        return;
+        
+    }
+    else
     window.setTimeout("redirect()", 9000)
 }
 
