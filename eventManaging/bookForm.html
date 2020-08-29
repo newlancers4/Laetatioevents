@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Laetatio Events</title>
-    <link rel="stylesheet" href="myStyle.css">
+    <link rel="stylesheet" href="pagesStyles.css">
     <link rel="icon" href="Assets/Logo/Logo Final.png" type="image/png" sizes="16x16">
 </head>
 <body>
@@ -14,11 +14,30 @@
 </div>
 
 <div class="topnav">
-  <a href="index.html" style="float:right">Home</a>
+  <a href="index.html?splash" style="float:right">Home</a>
 </div>
-
+<div class="myForm">
+  <form action="/" >
+    <div class="formFields">
+      <h4>Enter the Following Fields:</h4>
+      <input type="text" name="name" required placeholder="Name"><br>
+      <input type="number" name="contact" required placeholder="Contact Number"><br>
+      <input type="email" name="email" required placeholder="E-Mail ID"><br>
+      <input type="date" name="date" required placeholder="Date you want to book"><br>
+      <textarea rows="5" placeholder="Details about the event that to be organized"></textarea><br>
+      <button onclick="func()">Submit</button>
+    </div>
+    
+  </form>
+</div>
 <div class="footer">
     <p>Site Created and developed by <a href="https://github.com/newlancers4" >newlancers4</a></p>
   </div>
 </body>
+<script>
+  function func(){
+    window.alert("We'll Contact you within the next 24Hours!");
+    window.close();
+  }
+</script>
 </html>

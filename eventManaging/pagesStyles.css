@@ -24,8 +24,8 @@
   
   .topnav {
     overflow: hidden;
-    background-color: #333;
-    color: white;
+    background-color: rgb(255, 60, 151);
+  color: white;
   }
   
   .topnav a {
@@ -60,7 +60,49 @@
     padding: 20px;
   }
   
+  .myForm{
+    border: solid rgb(255, 60, 151);
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  button {
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    border-bottom: 4px solid  rgb(255, 60, 151);
+    background:  rgb(255, 60, 151); 
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    }
+
+  .formFields {
+    padding: 40px;
+  }
   
+  .formFields input,
+  .formFields textarea {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 20px;
+      background: #d0dfe8;
+  }
+
+  .formFields textarea {
+      resize: none;
+  }
+
+  ::placeholder{
+    color: rgb(255, 60, 151);
+  }
   
   .card {
     background-color: white;
