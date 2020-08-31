@@ -34,6 +34,11 @@ body {
 }
 
 .topnav a {
+    background-color: rgb(255, 60, 151);
+    color: white;
+}
+
+.topnav a {
     float: left;
     display: block;
     color: white;
@@ -119,6 +124,53 @@ button {
     content: "";
     display: table;
     clear: both;
+}
+
+#surprise-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.surprise-holder {
+    max-width: 700px;
+    width: 100%;
+    padding: 1vh 4vh 1vh 4vh;
+    margin: 1vh 0 1vh 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-image: radial-gradient(rgb(255, 255, 255), rgba(250, 184, 236, 0.397), rgba(255, 60, 151, 0.322));
+}
+
+.surprise-thumbnail {
+    border-radius: 50%;
+    min-width: 100px;
+    min-height: 100px;
+    width: 8vw;
+    height: 8vw;
+}
+
+.surprise-description {
+    margin: 5%;
+    width: 70%;
+}
+
+.surp-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.surprise-description>button {
+    background-color: deeppink;
+    color: white;
+    width: 100%;
+    max-width: 300px;
 }
 
 .footer {
