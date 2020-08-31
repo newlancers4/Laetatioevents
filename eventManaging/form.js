@@ -35,7 +35,7 @@ var suprises = {
     33: "Surprise on small screen"
 }
 
-var td= {
+var td = {
     1: "Themed Decoration 1",
     2: "Themed Decoration 2",
     3: "Themed Decoration 3",
@@ -70,38 +70,38 @@ var td= {
     32: "Themed Decoration 32",
     33: "Themed Decoration 33"
 }
-var hw={
-    1:"Home wedding decoration 1",
-    2:"Home wedding decoration 2",
-    3:"Home wedding decoration 2",
-    4:"Home wedding decoration 4"
+var hw = {
+    1: "Home wedding decoration 1",
+    2: "Home wedding decoration 2",
+    3: "Home wedding decoration 2",
+    4: "Home wedding decoration 4"
 }
 
-var bd={
-    1:"Balloon Decoration 1",
-    2:"Balloon Decoration 2",
-    3:"Balloon Decoration 3",
-    4:"Balloon Decoration 4",
-    5:"Balloon Decoration 5",
-    6:"Balloon Decoration 6",
-    7:"Balloon Decoration 7",
-    8:"Balloon Decoration 8",
-    9:"Balloon Decoration 9",
-    10:"Balloon Decoration 10"
+var bd = {
+    1: "Balloon Decoration 1",
+    2: "Balloon Decoration 2",
+    3: "Balloon Decoration 3",
+    4: "Balloon Decoration 4",
+    5: "Balloon Decoration 5",
+    6: "Balloon Decoration 6",
+    7: "Balloon Decoration 7",
+    8: "Balloon Decoration 8",
+    9: "Balloon Decoration 9",
+    10: "Balloon Decoration 10"
 }
-var ld={
-    1:"Lighting Decorations 1",
-    2:"Lighting Decorations 2",
-    3:"Lighting Decorations 3",
-    4:"Lighting Decorations 4",
-    5:"Lighting Decorations 5",
-    6:"Lighting Decorations 6",
-    7:"Lighting Decorations 7",
-    8:"Lighting Decorations 8",
-    9:"Lighting Decorations 9",
-    10:"Lighting Decorations 10",
-    11:"Lighting Decorations 11",
-    12:"Lighting Decorations 12"
+var ld = {
+    1: "Lighting Decorations 1",
+    2: "Lighting Decorations 2",
+    3: "Lighting Decorations 3",
+    4: "Lighting Decorations 4",
+    5: "Lighting Decorations 5",
+    6: "Lighting Decorations 6",
+    7: "Lighting Decorations 7",
+    8: "Lighting Decorations 8",
+    9: "Lighting Decorations 9",
+    10: "Lighting Decorations 10",
+    11: "Lighting Decorations 11",
+    12: "Lighting Decorations 12"
 
 }
 
@@ -112,62 +112,62 @@ if (url.includes("?spid=")) {
     var urlSplit = url.split("?")
     console.log(urlSplit)
     var query = urlSplit[1].split("=")
-    query[1]=parseInt(query[1])
+    query[1] = parseInt(query[1])
     console.log(typeof query[1])
-    var event=document.getElementById("event")
+    var event = document.getElementById("event")
     var eventType = document.getElementById("event-type")
-    event.value="Surprises"
+    event.value = "Surprises"
     eventType.value = suprises[query[1]]
-    event.setAttribute("readonly","true")
-    eventType.setAttribute("readonly","true")
+    event.setAttribute("readonly", "true")
+    eventType.setAttribute("readonly", "true")
 }
 else if (url.includes("?tdid=")) {
     console.log(url)
     var urlSplit = url.split("?")
     var query = urlSplit[1].split("=")
-    query[1]=parseInt(query[1])
-    var event=document.getElementById("event")
+    query[1] = parseInt(query[1])
+    var event = document.getElementById("event")
     var eventType = document.getElementById("event-type")
-    event.value="Themed Decorations"
-    eventType.value =td[query[1]]
-    event.setAttribute("readonly","true")
-    eventType.setAttribute("readonly","true")
+    event.value = "Themed Decorations"
+    eventType.value = td[query[1]]
+    event.setAttribute("readonly", "true")
+    eventType.setAttribute("readonly", "true")
 }
 else if (url.includes("?bdid=")) {
     console.log(url)
     var urlSplit = url.split("?")
     var query = urlSplit[1].split("=")
-    query[1]=parseInt(query[1])
-    var event=document.getElementById("event")
+    query[1] = parseInt(query[1])
+    var event = document.getElementById("event")
     var eventType = document.getElementById("event-type")
-    event.value="Balloon Decorations"
+    event.value = "Balloon Decorations"
     eventType.value = bd[query[1]]
-    event.setAttribute("readonly","true")
-    eventType.setAttribute("readonly","true")
+    event.setAttribute("readonly", "true")
+    eventType.setAttribute("readonly", "true")
 }
 else if (url.includes("?ldid=")) {
     console.log(url)
     var urlSplit = url.split("?")
     var query = urlSplit[1].split("=")
-    query[1]=parseInt(query[1])
-    var event=document.getElementById("event")
+    query[1] = parseInt(query[1])
+    var event = document.getElementById("event")
     var eventType = document.getElementById("event-type")
-    event.value="Light Decorations"
+    event.value = "Light Decorations"
     eventType.value = ld[query[1]]
-    event.setAttribute("readonly","true")
-    eventType.setAttribute("readonly","true")
+    event.setAttribute("readonly", "true")
+    eventType.setAttribute("readonly", "true")
 }
 else if (url.includes("?hwid=")) {
     console.log(url)
     var urlSplit = url.split("?")
     var query = urlSplit[1].split("=")
-    query[1]=parseInt(query[1])
-    var event=document.getElementById("event")
+    query[1] = parseInt(query[1])
+    var event = document.getElementById("event")
     var eventType = document.getElementById("event-type")
-    event.value="Home wedding Decorations"
+    event.value = "Home wedding Decorations"
     eventType.value = bw[query[1]]
-    event.setAttribute("readonly","true")
-    eventType.setAttribute("readonly","true")
+    event.setAttribute("readonly", "true")
+    eventType.setAttribute("readonly", "true")
 }
 else
     document.body.innerHTML = "404 Bad Request!"
