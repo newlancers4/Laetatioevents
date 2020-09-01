@@ -169,9 +169,20 @@ else if (url.includes("?hwid=")) {
     event.setAttribute("readonly", "true")
     eventType.setAttribute("readonly", "true")
 }
-else
-    document.body.innerHTML = "404 Bad Request!"
-
+else{
+ 
+    var image=new Image()
+    image.src="E:/newlancers/404-3.gif"
+    image.style.height="100vh"
+    image.style.width="100%"
+    var body=document.body
+    body.innerHTML = ""
+    body.style.overflow="hidden"
+    body.style.border=0
+    body.style.padding=0
+    body.style.margin=0
+    body.appendChild(image)
+}    
 
 
 
