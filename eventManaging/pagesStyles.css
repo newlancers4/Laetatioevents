@@ -9,7 +9,7 @@ h1 {
 body {
     font-family: Arial;
     padding: 10px;
-    background: #f1f1f1;
+    background: #ffffff;
 }
 
 .header {
@@ -180,23 +180,38 @@ button {
     margin-top: 20px;
 }
 
+.deco-body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.deco-item {
+    margin: 5% 4% 5% 4%;
+    background-image: radial-gradient(rgb(255, 137, 229), rgba(255, 167, 236, 0.397), rgba(255, 255, 255, 0.322));
+    padding: 4%;
+}
+
 .row {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 0 8px;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
 }
 
 .column {
     -ms-flex: 25%;
     flex: 25%;
     max-width: 25%;
-    padding: 0 4px;
+    padding: 0 5px;
 }
 
 .column img {
-    margin-top: 8px;
     vertical-align: middle;
     width: 100%;
 }
