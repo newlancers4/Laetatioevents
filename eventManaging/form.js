@@ -172,7 +172,7 @@ else if (url.includes("?hwid=")) {
 else{
  
     var image=new Image()
-    image.src="./Assets/Logo/404-1.gif"
+    image.src="./Assets/Logo/404-3.gif"
     image.style.height="100vh"
     image.style.width="100%"
     var body=document.body
