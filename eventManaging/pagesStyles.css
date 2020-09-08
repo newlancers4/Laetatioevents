@@ -130,7 +130,7 @@ button {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -145,15 +145,15 @@ button {
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    background-image: radial-gradient(rgb(255, 255, 255), rgba(250, 184, 236, 0.397), rgba(255, 60, 151, 0.322));
+    background-image: radial-gradient(rgba(255, 209, 236, 0.89), rgb(250, 219, 243), rgb(255, 255, 255));
 }
 
 .surprise-thumbnail {
     border-radius: 50%;
     min-width: 100px;
     min-height: 100px;
-    width: 8vw;
-    height: 8vw;
+    width: 10vw;
+    height: 10vw;
 }
 
 .surprise-description {
@@ -221,6 +221,44 @@ button {
         -ms-flex: 50%;
         flex: 50%;
         max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #surprise-body {
+        justify-content: center;
+        font-size: smaller;
+    }
+    .surprise-holder {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .surprise-thumbnail {
+        height: 10vw;
+        width: 10vw;
+    }
+    .surprise-description {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #surprise-body {
+        justify-content: center;
+        font-size: smaller;
+    }
+    .surprise-holder {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .surprise-thumbnail {
+        height: 30vw;
+        width: 30vw;
+    }
+    .surprise-description {
+        margin: 0;
     }
 }
 
