@@ -94,7 +94,7 @@ body {
 .rightcolumn {
     float: left;
     width: 25%;
-    background-color: #f1f1f1;
+    background-color: #fbfdfc;
     padding-left: 20px;
 }
 
@@ -126,7 +126,7 @@ body {
 .footer {
     padding: 40px;
     text-align: center;
-    background: #ddd;
+    background-image: radial-gradient(rgb(255, 255, 255), rgba(250, 184, 236, 0.397), rgba(255, 60, 151, 0.322));
     margin-top: 20px;
 }
 
@@ -205,6 +205,9 @@ body {
     width: 100%;
     height: 25%;
 }
+.decoration-index >div:hover{
+    cursor: pointer;
+} 
 
 .deco-category {
     border-radius: 50%;
@@ -215,6 +218,7 @@ body {
     object-fit: contain;
     margin: 2%;
 }
+
 
 .deco-title {
     text-align: center;
@@ -252,7 +256,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background: #f1f1f1;
+    background: #fbfdfc;
 }
 
 #surp-promo>div {
