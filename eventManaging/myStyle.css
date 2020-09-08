@@ -16,7 +16,10 @@ h1 {
     background-color: #fbfdfc;
     animation: animate 10s forwards infinite;
     z-index: 10;
-    object-fit: contain;
+}
+
+#splash-logo {
+    width: 100%;
 }
 
 @keyframes animate {
