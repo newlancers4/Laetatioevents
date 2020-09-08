@@ -22,7 +22,7 @@ function timeout() {
 
 function redirect() {
     var splash = document.querySelector(".splash-container");
-    splash.style.visibility="hidden"
+    
     splash.remove()
 }
 window.onscroll = function () { myFunction() };
