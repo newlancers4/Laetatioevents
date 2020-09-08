@@ -14,7 +14,7 @@ h1 {
     height: 100vh;
     width: 100vw;
     background-color: #fbfdfc;
-    animation: animate 10s forwards infinite;
+    animation: animate 10s forwards ;
     z-index: 10;
 }
 
@@ -31,7 +31,7 @@ h1 {
     }
     100% {
         opacity: 0;
-        visibility: hidden;
+        
     }
 }
 
