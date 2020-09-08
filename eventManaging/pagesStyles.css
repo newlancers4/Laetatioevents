@@ -224,7 +224,7 @@ button {
     }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1450px) {
     #surprise-body {
         justify-content: center;
         font-size: smaller;
