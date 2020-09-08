@@ -73,7 +73,7 @@ var td = {
 var hw = {
     1: "Home wedding decoration 1",
     2: "Home wedding decoration 2",
-    3: "Home wedding decoration 2",
+    3: "Home wedding decoration 3",
     4: "Home wedding decoration 4"
 }
 
@@ -165,7 +165,7 @@ else if (url.includes("?hwid=")) {
     var event = document.getElementById("event")
     var eventType = document.getElementById("event-type")
     event.value = "Home wedding Decorations"
-    eventType.value = bw[query[1]]
+    eventType.value = hw[query[1]]
     event.setAttribute("readonly", "true")
     eventType.setAttribute("readonly", "true")
 }
