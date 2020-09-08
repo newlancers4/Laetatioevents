@@ -12,7 +12,6 @@
 <body>
 
     <div class="header">
-        <!-- <img src="Assets/Logo/Logo Final.png" style="float: left;height: 100px;width: 100px;"> -->
         <h1>Welcome to Laetatio</h1>
         <p>We Create You Celebrate</p>
     </div>
@@ -20,17 +19,19 @@
     <div class="topnav">
         <a href="index.html?splash" style="float:right">Home</a>
     </div>
+
     <div class="myForm">
         <form action="/">
             <div class="formFields">
                 <h4>Enter the Following Fields:</h4>
-                <input type="text" name="name" required placeholder="Name"><br>
-                <input type="number" name="contact" required placeholder="Contact Number"><br>
-                <input type="text" id="event" name="event" value="">
-                <input type="text" id="event-type" name="type" value="">
-                <input type="email" name="email" required placeholder="E-Mail ID"><br>
-                <input type="date" name="date" required placeholder="Date you want to book"><br>
-                <textarea rows="5" placeholder="Details about the event that to be organized"></textarea><br>
+                <input class="bookInput" type="text" name="fname" required placeholder="First Name"><br>
+                <input class="bookInput" type="text" name="lname" required placeholder="Last Name"><br>
+                <input class="bookInput" type="number" name="contact" required placeholder="Mobile Number"><br>
+                <input class="bookInput" type="text" id="event" name="event" value=""> <br>
+                <input class="bookInput" type="text" id="event-type" name="type" value=""><br />
+                <input class="bookInput" type="email" name="email" required placeholder="Email Address"><br>
+                <input class="bookInput" type="date" name="date" required placeholder="Booking Date"><br>
+                <textarea class="bookInput" rows="5" placeholder="Event Details"></textarea><br>
                 <button onclick="func()">Submit</button>
             </div>
 

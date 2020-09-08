@@ -24,7 +24,7 @@ body {
 
 .topnav {
     overflow: hidden;
-    background-color: rgb(255, 60, 151);
+    background-color: rgb(255, 45, 200);
     color: white;
 }
 
@@ -34,7 +34,7 @@ body {
 }
 
 .topnav a {
-    background-color: rgb(255, 60, 151);
+    background-color: rgb(255, 45, 200);
     color: white;
 }
 
@@ -48,31 +48,14 @@ body {
 }
 
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: rgb(255, 176, 229);
     color: black;
 }
 
-.leftcolumn {
-    float: left;
-    width: 75%;
-}
-
-.rightcolumn {
-    float: left;
-    width: 25%;
-    background-color: #f1f1f1;
-    padding-left: 20px;
-}
-
-.fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-}
-
 .myForm {
-    border: solid rgb(255, 60, 151);
-    background-color: white;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgba(255, 180, 233, 0.452), rgba(247, 166, 230, 0.747));
     padding: 20px;
     margin-top: 20px;
     text-align: center;
@@ -80,30 +63,54 @@ body {
 
 button {
     width: 50%;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 15px;
+    margin: 10px;
     border-radius: 20px;
     border: none;
-    border-bottom: 4px solid rgb(255, 60, 151);
-    background: rgb(255, 60, 151);
-    font-size: 16px;
+    background: linear-gradient(rgb(255, 119, 214), rgb(255, 45, 209));
     font-weight: 400;
     color: #fff;
 }
 
+button:focus,
+button:hover {
+    outline: none;
+    background: linear-gradient( rgb(255, 45, 209), rgb(255, 119, 214));
+}
+
 .formFields {
-    padding: 40px;
+    border: solid rgb(255, 45, 200);
+    width: 80vw;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
 }
 
 .formFields input,
 .formFields textarea {
     display: block;
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 10px;
     border: none;
-    border-radius: 20px;
-    background: #d0dfe8;
+    border-bottom: 2px solid rgb(255, 183, 217);
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: deeppink;
+    background: rgb(255, 255, 255);
+}
+
+.bookInput {
+    font-size: 14px;
+}
+
+.bookInput:focus,
+.bookInput:hover {
+    outline: none;
+    background-color: #fff;
+    border-bottom: 2px solid rgb(255, 58, 150);
 }
 
 .formFields textarea {
@@ -111,7 +118,7 @@ button {
 }
 
  ::placeholder {
-    color: rgb(255, 60, 151);
+    color: rgb(250, 152, 198);
 }
 
 .card {
@@ -176,7 +183,7 @@ button {
 .footer {
     padding: 40px;
     text-align: center;
-    background: #ddd;
+    background-image: radial-gradient(rgb(255, 255, 255), rgba(250, 184, 236, 0.397), rgba(255, 60, 151, 0.322));
     margin-top: 20px;
 }
 

@@ -14,8 +14,9 @@ h1 {
     height: 100vh;
     width: 100vw;
     background-color: #fbfdfc;
-    animation: animate 10s forwards ;
+    animation: animate 10s forwards infinite;
     z-index: 10;
+    object-fit: contain;
 }
 
 #splash-logo {
@@ -31,7 +32,7 @@ h1 {
     }
     100% {
         opacity: 0;
-        
+        visibility: hidden;
     }
 }
 
@@ -71,7 +72,7 @@ body {
 
 .topnav {
     overflow: hidden;
-    background-color: rgb(255, 92, 168);
+    background-color: rgb(255, 45, 200);
     color: white;
 }
 
@@ -85,7 +86,7 @@ body {
 }
 
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: rgb(255, 176, 229);
     color: black;
 }
 
@@ -97,18 +98,11 @@ body {
 .rightcolumn {
     float: left;
     width: 25%;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     padding-left: 20px;
 }
 
-.fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-}
-
 .card {
-    /* background-color: white; */
     background-image: radial-gradient(rgb(255, 255, 255), rgba(250, 184, 236, 0.397), rgba(255, 60, 151, 0.322));
     padding: 20px;
     margin-top: 20px;
@@ -116,7 +110,7 @@ body {
 }
 
 .card1 {
-    background-color: #aaa;
+    background-color: rgb(255, 255, 255);
     text-align: center;
 }
 
@@ -264,7 +258,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background: #f1f1f1;
+    background: #ffffff;
 }
 
 #surp-promo>div {
