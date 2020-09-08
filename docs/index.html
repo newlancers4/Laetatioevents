@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Laetatio Events</title>
+    <link rel="stylesheet" href="myStyle.css">
+    <link rel="icon" href="Assets/Logo/Logo Final.png" type="image/png" sizes="16x16">
+</head>
+
+<body onload="timeout()" id="body">
+    <div id="splash-container" class="splash-container">
+        <p class="splash">
+            <img src="./Assets/Logo/loader.gif" alt="">
+        </p>
+    </div>
+    <div class="header">
+        <img id="logo-head" src="Assets/Logo/Logo Final.png" />
+    </div>
+
+    <div class="topnav">
+        <a href="surprises.html">Surprises</a>
+        <a href="decorations.html">Decoration</a>
+        <a href="promotions.html">Promotions</a>
+        <a href="https://api.whatsapp.com/send?phone=918072755450&fbclid=IwAR0T3sMJd080qdjKtbyhviccV3DjV1tdL16i13o_KLl2eIYOHbgGdqQXddM" target="_blank" rel="noopener noreferrer" style="float:right">Contact us</a>
+    </div>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Decorations</h2>
+                <h5>some words describes decorations provided</h5>
+                <div class="decoration-index">
+                    <div>
+                        <div class="deco-category" id="balloon" onclick="toPage('bd')">
+                        </div>
+                        <p id="bd" onclick="toPage('bd')"> Balloon Decorations</p>
+                    </div>
+                    <div>
+                        <div class="deco-category" id="wedding" onclick="toPage('hw')">
+                        </div>
+                        <p onclick="toPage('hw')">Home Wedding</p>
+                    </div>
+                    <div>
+                        <div class="deco-category" id="lighting" onclick="toPage('ld')">
+                        </div>
+                        <p onclick="toPage('ld')">Lighting Decorations</p>
+                    </div>
+                    <div>
+                        <div class="deco-category" id="themed" onclick="toPage('td')">
+                        </div>
+                        <p onclick="toPage('td')">Themed Decorations</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card1">
+                <div id="surp-promo">
+                    <div id="surprise">
+                        <div>
+                            <h2>Surprises</h2>
+                            <h5>Title description</h5>
+                        </div>
+                        <div class="decoration-index">
+                            <div>
+                                <div class="deco-category" id="indoor" onclick="toPage('sp')">
+
+                                </div>
+                                <p onclick="toPage('sp')">Surprises</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="promotion">
+                        <div>
+                            <h2>Promotions</h2>
+                            <h5>Title description</h5>
+                        </div>
+                        <div class="decoration-index">
+                            <div>
+                                <div class="deco-category" id="promote" onclick="toPage('pr')">
+                                </div>
+                                <p onclick="toPage('pr')">Promotions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>About us</h2>
+                <div style="height:100px;">
+                    <!-- <img src="Assets/Logo/Logo Final.png" alt="Logo" style="width: 200px;height: 100px;"> -->
+                </div>
+                <p>We are great at</p>
+            </div>
+            <div class="card">
+                <h3>Memories</h3>
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="Assets/Memories/1.jpg" style="width:100%">
+                        <div class="text">Caption Text</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="Assets/Memories/2.jpg" style="width:100%">
+                        <div class="text">Caption Two</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="Assets/Memories/3.jpg" style="width:100%">
+                        <div class="text">Caption Three</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+            </div>
+            <div class="card">
+                <h3>Follow us</h3>
+                <a href="https://www.facebook.com/welaetatio" target="_blank" rel="noopener noreferrer"><img src="Assets/Social Media/facebook-splash.png" alt="FBLogo" style="width: 90px;height: 80px;"></a>
+                <a href="https://www.youtube.com/channel/UCsM89zt-BeS8XQeNqB9kwRA" target="_blank" rel="noopener noreferrer"><img src="Assets/Social Media/94748_youtube_1460x1460.png" alt="FBLogo" style="margin-left:3%; width: 90px;height: 100px;"></a>
+                <a href="https://www.instagram.com/we_laetatio/" target="_blank" rel="noopener noreferrer"><img src="Assets/Social Media/instagram-splash.png" alt="FBLogo" style="width: 90px;height: 80px;"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Site Created and developed by <a href="https://github.com/newlancers4">newlancers4</a></p>
+    </div>
+    <script type="text/javaScript" src="script.js"></script>
+
+</body>
+
+</html>
